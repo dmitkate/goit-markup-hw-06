@@ -548,10 +548,12 @@ body{
     padding: 15px 16px;
     margin-right: 12px;
     border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
 }
 .footer-button{
+    position: relative;
     width: 200px;
     height: 50px;
     background: #2196F3;
@@ -559,23 +561,25 @@ body{
     border-radius: 4px;
     border-color: transparent;
 
+}
+.footer-button-text{
+    display: inline-block;
+    padding-right: 20px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    
-    
-
     letter-spacing: 0.06em;
-    
     color: #FFFFFF;
+ 
 }
 .footer-button-wrap{
-    position: relative;
+   
     display: inline;
 }
 .footer-input-svg{
     position: absolute;
-    left: 148px;
+    display: inline-block;
+    right: 22px;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -739,7 +743,7 @@ body{
     position: relative;
    
     width: 528px;
-    min-height: 581px;
+    height: 581px;
     padding: 40px;
     background: #fff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -760,6 +764,12 @@ body{
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: #fff;
     border-radius: 50%;
+    fill: #000000;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.close-modal:hover,
+.close-modal:focus{
+    fill: #2196F3;
 }
 .is-hidden{
     opacity: 0;
@@ -776,34 +786,34 @@ body{
     
     color: #212121;
 }
-.modal-area{
-    margin-bottom: 10px;
-}
-.modal-area:last-child{
-    margin-bottom: 20px;
-}
+
 .modal-description{
     font-size: 12px;
     line-height: 1.66;
     letter-spacing: 0.01em;  
     color: #757575;
+    margin-bottom: 4px;
     
 }
 .modal-input{
-    margin-top: 4px;
-    width: 448px;
+    
+    width: 100%;
     height: 40px;
-
+    padding-top: 12px;
+    padding-bottom: 12px;
     padding-left: 32px;
+
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
+
 .modal-input:hover,
-.modal-input:focus
-{
+.modal-input:focus{
     border-color: #2196F3;
 }
+
 .modal-input:hover + .modal-svg,
 .modal-input:focus + .modal-svg{
     fill: #2196F3;
@@ -815,7 +825,8 @@ body{
     height: 120px;
     font-size: 12px;
     line-height: 1.16;
-    letter-spacing: 0.01em;    
+    letter-spacing: 0.01em;
+    
 }
 .modal-input::placeholder{
     font-weight: 400;
@@ -865,16 +876,21 @@ body{
 }
 .modal-input-wrap{
     position: relative;
+    margin-bottom: 10px;
+}
+.modal-label-last{
+    margin-bottom: 20px;
 }
 .chb{
     display: flex;
     position: relative;
 }
-.modal-input-wrap svg{
+.modal-svg{
     position: absolute;
     left: 12px;
     top: 50%;
     transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .chb::before{

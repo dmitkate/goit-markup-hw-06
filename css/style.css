@@ -819,6 +819,7 @@ body{
     fill: #2196F3;
 }
 .modal-description textarea{
+    display: block;
     font-family: inherit;
     resize: none;
     padding: 12px 16px;

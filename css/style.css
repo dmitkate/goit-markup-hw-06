@@ -560,22 +560,17 @@ body{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border-color: transparent;
-
-}
-.footer-button-text{
-    display: inline-block;
     padding-right: 20px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
     color: #FFFFFF;
- 
+    cursor: pointer;
+
 }
-.footer-button-wrap{
-   
-    display: inline;
-}
+
+
 .footer-input-svg{
     position: absolute;
     display: inline-block;
